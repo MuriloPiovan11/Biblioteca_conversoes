@@ -34,6 +34,6 @@ echo "\nO seu imc é: ", IMC(70, 1.70);
 echo "\nSeu consumo ideal de agua é: ", Ideal_agua(70);
 echo "\nO peso em quilo é: ", libras_quilo(120);
 echo "\nSua frequencia cardiaca é: ", frequencia_caria(19);
-echo "\nSuas calorias basais é: ", calorias_basais(170, 80, "Masculino",20);
+echo "\nSuas calorias basais é: ", calorias_basais(170, 80, "Feminino",20);
 
 ?>

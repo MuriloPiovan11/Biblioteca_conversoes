@@ -48,7 +48,7 @@ namespace saude{
         return $libra * 0.453592;
     }
     function calorias_basais($altura, $peso, $sexo, $idade){
-    if ($sexo = "Masculino"){
+    if ($sexo == "Masculino"){
         return 66.5 + (13.75 * $peso)+(5.003 * $altura) - (6.75 * $idade);
     }else {
         return 655.1 + (9.563 * $peso)+(1.85 * $altura) - (4.676 * $idade);
