@@ -34,4 +34,26 @@ namespace geometria{
     
     }
 }
+namespace saude{
+    function IMC($peso, $altura){
+        return $peso / ($altura * $altura);
+    }
+    function Ideal_agua($peso){
+        return $peso * 0.035;
+    }
+    function frequencia_caria($idade){
+        return 220 - $idade;
+    }
+    function libras_quilo($libra){
+        return $libra * 0.453592;
+    }
+    function calorias_basais($altura, $peso, $sexo, $idade){
+    if ($sexo = "Masculino"){
+        return 66.5 + (13.75 * $peso)+(5.003 * $altura) - (6.75 * $idade);
+    }else {
+        return 655.1 + (9.563 * $peso)+(1.85 * $altura) - (4.676 * $idade);
+}
+}
+}
+
 ?>
