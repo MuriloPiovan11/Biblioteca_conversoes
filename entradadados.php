@@ -18,22 +18,57 @@ use function saude\frequencia_caria;
 use function saude\libras_quilo;
 use function saude\calorias_basais;
 
-echo "A conversão do dólar deu: ", dolar(1, 5);
-echo "\nA conversão do iene deu: ", iene(100, 0.031);
-echo "\nA conversão do peso deu: ", peso(1000, 0.0035);
-echo "\nA conversão do euro deu: ", euro(1, 5.85);
-echo "\nA conversão da libra deu: ", libra(1, 6.74);
+// echo "A conversão do dólar deu: ", dolar(1, 5);
+// echo "\nA conversão do iene deu: ", iene(100, 0.031);
+// echo "\nA conversão do peso deu: ", peso(1000, 0.0035);
+// echo "\nA conversão do euro deu: ", euro(1, 5.85);
+// echo "\nA conversão da libra deu: ", libra(1, 6.74);
 
-echo "\nA area do quadrado é: ", Ar_quadrado(5);
-echo "\nA area do circulo é: ", Ar_circulo(5);
-echo "\nA area do triangulo é: ", Ar_triangulo(5,6);
-echo "\nA area do trapezio é: ", Ar_trapezio(5, 6, 7);
-echo "\nA area do retangulo é: ", Ar_retangulo(5, 6);
+// echo "\nA area do quadrado é: ", Ar_quadrado(5);
+// echo "\nA area do circulo é: ", Ar_circulo(5);
+// echo "\nA area do triangulo é: ", Ar_triangulo(5,6);
+// echo "\nA area do trapezio é: ", Ar_trapezio(5, 6, 7);
+// echo "\nA area do retangulo é: ", Ar_retangulo(5, 6);
 
-echo "\nO seu imc é: ", IMC(70, 1.70);
-echo "\nSeu consumo ideal de agua é: ", Ideal_agua(70);
-echo "\nO peso em quilo é: ", libras_quilo(120);
-echo "\nSua frequencia cardiaca é: ", frequencia_caria(19);
-echo "\nSuas calorias basais é: ", calorias_basais(170, 80, "Feminino",20);
+// echo "\nO seu imc é: ", IMC(70, 1.70);
+// echo "\nSeu consumo ideal de agua é: ", Ideal_agua(70);
+// echo "\nO peso em quilo é: ", libras_quilo(120);
+// echo "\nSua frequencia cardiaca é: ", frequencia_caria(19);
+// echo "\nSuas calorias basais é: ", calorias_basais(170, 80, "Feminino",20);
+
+$op = " ";
+while ($op != 6){
+    echo "\n====Menu de conversão====\n1-Dólar\n2-Iene\n3-Peso\n4-Euro\n5-Libra\n6-Sair";
+    $op = readline("Digite sua opção: ");
+    switch ($op){
+        case 1:
+            $dolar = readline("Digite o valor em dólar: ");
+            $cotacao = readline("Digite o valor da cotação: ");
+            echo "O valor em reais é: ", dolar($dolar, $cotacao);
+            break;
+        case 2:
+            $iene = readline ("Digite o valor em iene: ");
+            $cotacao = readline("Digite o valor da cotação: ");
+            echo "O valor em reais é: ", iene($iene, $cotacao);
+            break;
+        case 3:
+            $peso = readline ("Digite o valor em peso: ");
+            $cotacao = readline("Digite o valor da cotação: ");
+            echo "O valor em reais é: ", iene($peso, $cotacao);
+            break;
+        case 4:
+            $iene = readline ("Digite o valor em iene: ");
+            $cotacao = readline("Digite o valor da cotação: ");
+            echo "O valor em reais é: ", iene($iene, $cotacao);
+            break;
+        case 5:
+            $iene = readline ("Digite o valor em iene: ");
+            $cotacao = readline("Digite o valor da cotação: ");
+            echo "O valor em reais é: ", iene($iene, $cotacao);
+            break;
+    }
+}
+
+
 
 ?>
