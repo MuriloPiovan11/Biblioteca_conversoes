@@ -16,5 +16,12 @@ namespace conversao {
         return $valor * $cotalibra;
     }
 }
-
+namespace geometria{
+    function Ar_quadrado($lado){
+        return $lado * $lado;
+    }
+    function Ar_triangulo($altura, $base){
+        return $altura * $base; 
+    }
+    
 ?>
