@@ -24,7 +24,9 @@ while ($op != 5){
     $op = readline("Digite sua opção: ");
     switch ($op) {
         case 1:
-        switch ($op){
+            echo "\n====Menu de Conversão====\n1-Dolar\n2-Iene\n3-Peso argentino\n4-Euro\n5-Libra esterlina\n6-Sair\n";
+            $op = readline("Digite sua opção: ");
+            switch($op){    
             case 1: 
                 $dolar = readline("Digite o valor em dólar: ");
                 $cotacao = readline("Digite o valor da cotação: ");
@@ -53,9 +55,10 @@ while ($op != 5){
             default:
             echo "OPção inávalida...";
                 break;
-        }
+                }
+            
             case 2:
-                echo "====Menu de Geometria====\n1-Area do quadrado\n2-Area do circulo\n3-Area do triangulo\n4-Area do trapezio\n5-Area do retangulo\n";
+                echo "\n====Menu de Geometria====\n1-Area do quadrado\n2-Area do circulo\n3-Area do triangulo\n4-Area do trapezio\n5-Area do retangulo\n";
                 $op = readline("Digite sua opção: ");   
                 switch ($op){
                 case 1: 
@@ -87,7 +90,7 @@ while ($op != 5){
                 break;
             }
             case 3:
-                echo "====Menu de conversão====\n1-IMC\n2-Consumo ideal de água\n3-Frequncia cardiaca\n4-Libra pra Quilo\n5-Calorias basais\n";
+                echo "\n====Menu de conversão====\n1-IMC\n2-Consumo ideal de água\n3-Frequncia cardiaca\n4-Libra pra Quilo\n5-Calorias basais\n";
                 $op = readline("Digite sua opção: ");
                 switch ($op){
                 case 1: 
