@@ -23,5 +23,8 @@ namespace geometria{
     function Ar_triangulo($altura, $base){
         return $altura * $base; 
     }
+    function Ar_triangulo($base, $altura){
+        return ($base * $altura)/2;
+    }
     
 ?>
