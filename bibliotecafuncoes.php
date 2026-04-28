@@ -1,0 +1,20 @@
+<?php
+namespace conversao {
+    function dolar($valor, $cotadolar){
+        return $valor * $cotadolar;
+    }
+    function iene($valor, $cotaiene){
+        return $valor * $cotaiene;
+    }
+    function peso($valor, $cotapeso){
+        return $valor * $cotapeso;
+    }
+    function euro($valor, $cotaeuro){
+        return $valor * $cotaeuro;
+    }
+    function libra ($valor, $cotalibra){
+        return $valor * $cotalibra;
+    }
+}
+
+?>
