@@ -20,7 +20,7 @@ namespace geometria{
     function Ar_quadrado($lado){
         return $lado * $lado;
     }
-    function Ar_triangulo($altura, $base){
+    function Ar_retangulo($altura, $base){
         return $altura * $base; 
     }
     function Ar_triangulo($base, $altura){
@@ -30,7 +30,9 @@ namespace geometria{
         return 3.14 * ($raio * $raio);
     }
     function Ar_trapezio($base_menor, $base_maior, $altura){
-        return [($base_maior + $base_menor)*$altura]/2;
-    }
+        return (($base_maior + $base_menor)*$altura)/2;
     
+    }
+}
+
 ?>
