@@ -26,5 +26,11 @@ namespace geometria{
     function Ar_triangulo($base, $altura){
         return ($base * $altura)/2;
     }
+    function Ar_circulo($raio){
+        return 3.14 * ($raio * $raio);
+    }
+    function Ar_trapezio($base_menor, $base_maior, $altura){
+        return [($base_maior + $base_menor)*$altura]/2;
+    }
     
 ?>
