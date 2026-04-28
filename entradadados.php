@@ -18,15 +18,12 @@ use function saude\frequencia_caria;
 use function saude\libras_quilo;
 use function saude\calorias_basais;
 
-// echo "\nSuas calorias basais é: ", calorias_basais(170, 80, "Feminino",20);
-
 $op = " ";
 while ($op != 5){
-    echo "\n====Menu de principal====\n1-Conversão para reais\n2-Geometria\n3-Saúde\n5-Sair";
+    echo "\n====Menu de principal====\n1-Conversão para reais\n2-Geometria\n3-Saúde\n5-Sair\n";
     $op = readline("Digite sua opção: ");
     switch ($op) {
         case 1:
-            echo "====Menu de conversão\n1-Dólar\n2-Iene\n3-Peso argentino\n4-Euro\n5-Libra Esterlina\n";
         switch ($op){
             case 1: 
                 $dolar = readline("Digite o valor em dólar: ");
@@ -55,9 +52,11 @@ while ($op != 5){
                 break;
             default:
             echo "OPção inávalida...";
-            break;
+                break;
+        }
             case 2:
-                echo "====Menu de conversão\n1-Dólar\n2-Iene\n3-Peso argentino\n4-Euro\n5-Libra Esterlina\n";
+                echo "====Menu de Geometria====\n1-Area do quadrado\n2-Area do circulo\n3-Area do triangulo\n4-Area do trapezio\n5-Area do retangulo\n";
+                $op = readline("Digite sua opção: ");   
                 switch ($op){
                 case 1: 
                     $Ar_quad = readline("Digite o valor do lado: ");
@@ -65,7 +64,7 @@ while ($op != 5){
                     break;
                 case 2:
                     $Ar_circulo = readline ("Digite o valor do raio: ");
-                    echo "O valor da area do circulo é: ", Ar_circulo($Ar);
+                    echo "O valor da area do circulo é: ", Ar_circulo($Ar_circulo);
                     break;
                 case 3:
                     $Ar_triangulo = readline ("Digite o valor da base do triangulo: ");
@@ -88,7 +87,8 @@ while ($op != 5){
                 break;
             }
             case 3:
-                echo "====Menu de conversão\n1-Dólar\n2-Iene\n3-Peso argentino\n4-Euro\n5-Libra Esterlina\n";
+                echo "====Menu de conversão====\n1-IMC\n2-Consumo ideal de água\n3-Frequncia cardiaca\n4-Libra pra Quilo\n5-Calorias basais\n";
+                $op = readline("Digite sua opção: ");
                 switch ($op){
                 case 1: 
                     $Altura = readline("Digite sua altura: ");
@@ -118,7 +118,7 @@ while ($op != 5){
                 echo "OPção inávalida...";
                 break;
             }
+        }
     }
-}
 
 ?>
