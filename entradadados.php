@@ -24,6 +24,7 @@ while ($op != 5){
     $op = readline("Digite sua opção: ");
     switch ($op) {
         case 1:
+            while ($op != 6){
             echo "\n====Menu de Conversão====\n1-Dolar\n2-Iene\n3-Peso argentino\n4-Euro\n5-Libra esterlina\n6-Sair\n";
             $op = readline("Digite sua opção: ");
             switch($op){    
@@ -52,12 +53,16 @@ while ($op != 5){
                 $cotacao = readline("Digite o valor da cotação: ");
                 echo "O valor em reais é: ", libra($iene, $cotacao);
                 break;
+            case 6:
+                echo "Você Saiu...";
+                break;
             default:
             echo "OPção inávalida...";
                 break;
                 }
-            
+            }
             case 2:
+                while ($op != 6){
                 echo "\n====Menu de Geometria====\n1-Area do quadrado\n2-Area do circulo\n3-Area do triangulo\n4-Area do trapezio\n5-Area do retangulo\n";
                 $op = readline("Digite sua opção: ");   
                 switch ($op){
@@ -85,11 +90,16 @@ while ($op != 5){
                     $Ac_retangulo = readline ("Digite o valor da altura do retangulo: ");
                     echo "O valor da area do retangulo é: ", Ar_retangulo($Ac_retangulo, $Ab_retangulo);
                     break;
+                case 6:
+                    echo "Você Saiu...";
+                break;
                 default:
-                echo "OPção inávalida...";
+                    echo "OPção inávalida...";
                 break;
             }
+            }
             case 3:
+                while ($op != 6){
                 echo "\n====Menu de conversão====\n1-IMC\n2-Consumo ideal de água\n3-Frequncia cardiaca\n4-Libra pra Quilo\n5-Calorias basais\n";
                 $op = readline("Digite sua opção: ");
                 switch ($op){
@@ -117,11 +127,14 @@ while ($op != 5){
                     $idade = readline ("Digite sua idade: ");
                     echo "O Seu consumo de calorias basais é: ", calorias_basais($altura, $peso, $sexo, $idade);
                     break;
+                case 6:
+                    echo "Você Saiu...";
+                break;
                 default:
-                echo "OPção inávalida...";
+                    echo "OPção inávalida...";
                 break;
             }
         }
     }
-
+}
 ?>
